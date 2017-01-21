@@ -4,6 +4,7 @@
 class lot:		#parking lot class
 
 	def __init__(self,taken)
+
 	TOTAL_SPOTS = 2000		#total east remote spots aproximation
 	self.num = 0			#number of open spots
 
