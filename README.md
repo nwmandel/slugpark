@@ -17,7 +17,7 @@ Julia Philipp		| nattifftoffe
 Eric Fultz, for advising on project scope.
 Jeffrey Rennie, for advising on implementation.
 Emmanuel Leroy, for advising on machine learning, API usage.
-Kevin Cameron, for advising on databases.
+Kevin Cameron, for advising on databases and web development.
 
 ## Usage
 
