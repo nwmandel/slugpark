@@ -1,21 +1,23 @@
 #Lucas Tay
 #hackucsc2017
 
-# SPEED < x = Walking
-# SPEED >= x = Driving
-# CONST DRIVE = 
-# CONST WALK =
+class User:
+	bool location 	# Is the user in the lot?
+	bool speed 		# Is the user driving?
 
+		# Initalized outside of the lot, speed may or may not be randomized
+		def __init__(self, random):
+			self.location = False;
+			self.speed = (random ? (random value) : True)
 
+		# Set the speed to the listed value
+		def SetSpeed(self, s):
+			self.speed = s
 
-# User Class
-'''
-class user:
-	id
-	location
-	speed
+		# Location changes means that the value is inverted.
+		def SetLocation(self):
+			self.location = not self.location 
 
-'''
 
 # Randomized User
 '''
