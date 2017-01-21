@@ -9,8 +9,8 @@ Team
 =====
 Name				| Github Account
 -----				| --------------
-Nicholas Mandel		| @nwmandel
-Jonathon Allen		| @jonath0n
-Lucas Tay			| @ltay
-Neda Ronaghi		| @nedaronaghi
-Julia Philipp		| @
+Nicholas Mandel		| nwmandel
+Jonathon Allen		| jonath0n
+Lucas Tay			| ltay
+Neda Ronaghi		| nedaronaghi
+Julia Philipp		| 
