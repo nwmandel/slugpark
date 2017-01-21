@@ -14,8 +14,9 @@ Julia Philipp		|
 
 ## Special Thanks To
 
-Eric Fultz, for giving helpful advice regarding project scope.
-Jeffrey Rennie, for giving helpful advice regarding implementation.
+Eric Fultz, for advising on project scope.
+Jeffrey Rennie, for advising on regarding implementation.
+Emmanuel Leroy, for advising on machine learning, API usage.
 
 ## Usage
 
