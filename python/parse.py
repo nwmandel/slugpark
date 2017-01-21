@@ -1,4 +1,5 @@
 import re
+import collections
 
 clean = r'\s|(enrolled)|(materials)|.*(and)|(^o.*)|(^c.*)|(.*\,.*)|([a-z][a-z][a-z][a-z][a-z][a-z]*?)'
 regex = re.compile(clean)
@@ -9,7 +10,7 @@ th = re.compile("(th)")
 fri = re.compile("(f)")
 time = re.compile("\d\d:\d\d(am|pm)-\d\d:\d\d(am|pm)")
 num = re.compile("(\d{1,3}o)")
-
+timef = re.compile("\d\d:\d\d(am|pm)")
 
 def clean():
 	f_out = open('schedules.txt', 'w')
@@ -94,6 +95,99 @@ def count_time():
 		for item in friday:
 			f_out.write("%s\n" % item)
 
+
+
+def sorted_time():
+	monday = dict()
+	tuesday = dict()
+	wednesday = dict()
+	thursday = dict()
+	friday = dict()
+	f_out = open('sorted_time.txt', 'w')
+	with open('just_time.txt', 'r') as f:
+		lines = f.readlines()
+		for line in lines:
+
+			if m.search(line):
+				time_ = re.search(time,line).group(0)	#every time class for monday
+				monday[line] = time_
+				od = collections.OrderedDict(sorted(monday.items()))
+				print(od)
+			elif tu.search(line):
+				time_ = re.search(time,line).group(0)	#every time class for tuesday
+				tuesday[line] = time_			
+			elif w.search(line):
+				if re.search(time,line) is not None:
+					time_ = re.search(time,line).group(0)	#every time class for wednesday
+					wednesday[line] = time_			
+			elif th.search(line):
+				time_ = re.search(time,line).group(0)	#every time class for thursday
+				thursday[line] = time_		
+			elif fri.search(line):
+				if re.search(time,line) is not None:
+					time_ = re.search(time,line).group(0)	#every time class for friday
+					friday[line] = time_			
+			else:
+				continue
+		for item in monday:
+			f_out.write("%s\n" % item)
+		for item in tuesday:
+			f_out.write("%s\n" % item)
+		for item in wednesday:
+			f_out.write("%s\n" % item)
+		for item in thursday:
+			f_out.write("%s\n" % item)
+		for item in friday:
+			f_out.write("%s\n" % item)
+
+
+def just_time():
+
+	monday = []
+	tuesday = []
+	wednesday = []
+	thursday = []
+	friday = []
+	f_out = open('just_time.txt', 'w')
+	with open('schedules.txt', 'r') as f:
+		lines = f.readlines()
+
+		for line in lines:
+			line.replace("pm",)
+			if m.search(line):
+				if re.search(timef,line) is not None:
+					time_ = re.search(timef,line).group(0)	#every timef class for monday
+					monday.append(time_)			
+			elif tu.search(line):
+				if re.search(timef,line) is not None:
+					time_ = re.search(timef,line).group(0)	#every timef class for tuesday
+					tuesday.append(time_)			
+			elif w.search(line):
+				if re.search(timef,line) is not None:
+					time_ = re.search(timef,line).group(0)	#every timef class for wednesday
+					wednesday.append(time_)			
+			elif th.search(line):
+				if re.search(timef,line) is not None:
+					time_ = re.search(timef,line).group(0)	#every timef class for thursday
+					thursday.append(time_)			
+			elif fri.search(line):
+				if re.search(timef,line) is not None:
+					time_ = re.search(timef,line).group(0)	#every time class for friday
+					friday.append(time_)			
+
+			else:
+				continue
+		for item in monday:
+			f_out.write("%s\n" % item)
+		for item in tuesday:
+			f_out.write("%s\n" % item)
+		for item in wednesday:
+			f_out.write("%s\n" % item)
+		for item in thursday:
+			f_out.write("%s\n" % item)
+		for item in friday:
+			f_out.write("%s\n" % item)
 				
-count_time()
+just_time()
+
 
