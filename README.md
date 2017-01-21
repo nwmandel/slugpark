@@ -10,13 +10,14 @@ Nicholas Mandel		| nwmandel
 Jonathon Allen		| jonath0n
 Lucas Tay			| ltay
 Neda Ronaghi		| nedaronaghi
-Julia Philipp		| 
+Julia Philipp		| nattifftoffe
 
 ## Special Thanks To
 
 Eric Fultz, for advising on project scope.
 Jeffrey Rennie, for advising on implementation.
 Emmanuel Leroy, for advising on machine learning, API usage.
+Kevin Cameron, for advising on databases.
 
 ## Usage
 
