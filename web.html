@@ -2,6 +2,17 @@
 <html>
 <head>
 <title>HTML Layouts using DIV, SPAN</title>
+<script src="script/raphael.2.1.0.min.js"></script>
+<script src="script/justgage.1.0.1.min.js"></script>
+<script>
+  var g = new JustGage({
+    id: "gauge",
+    value: 67,
+    min: 0,
+    max: 100,
+    title: "Visitors"
+  });
+</script>
 </head>
 <body>
 <div style="width:100%">
