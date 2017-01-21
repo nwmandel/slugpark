@@ -1,0 +1,54 @@
+SLUG PARK
+talking points
+
+- what it does right now
+	- input from users about entering and leaving the parking lot
+	
+- for the future
+	- using geotag data from users
+	- using YOLO: Real-time object detection -> installing webcam using machine learning to detect cars on 2D still images
+		or 2D videos (http://pjreddie.com/darknet/yolo/)
+		
+
+
+
+INNOVATION
+Judging Criteria
+Novelty: Is the approach or solution novel? Does it substantially depart from similar products? 
+	- solution is novel for UCSC campus
+	- but based off of solutions for other parking structures
+	
+Technical Merit: How elegant is the solution? Was a particularly difficult design challenge met? How polished is the Hack? How complete is the Hack, as presented? What work was actually accomplished as opposed to what was envisioned?
+	- python
+	- what is special about the code?
+	
+Impact/Use Potential: How much does an individual benefit from this hack? How many people will benefit from the hack?
+	- everyone on campus can benefit from this /everyone who commutes
+	- can affect one's decision to take the car to campus -> could even have environmental effects
+	- daily use of the app / website before driving to campus
+	
+Design: 
+	- website with easily understandable meters / gauges to indicate the status of the parking lot
+	- easy to use
+	- could be turned into an app too
+	- but website is simple enough to be mobile friendly
+	- usage is definitely self-apparent
+	
+
+TECH CARES
+Judging Criteria
+Solves a community issue:
+	- parking problem on campus
+	- environmental issues, might encourage students to find other ways to commute
+
+...
+
+MOBILE??
+Judging Criteria
+Creativity:
+	- app does solve a real issue: problem with finding parking on the UCSC campus
+Design and Execution:
+	- how easy is the app to use?
+	- just graphs to look at and simple user input
+	
+	
