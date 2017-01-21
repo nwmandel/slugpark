@@ -1,5 +1,4 @@
 # SlugPark Parking Tracker 
-===============
 
 This is an app used to track parking spots at UCSC using class enrollment data, statistical inference, and user location data. Made at [Hack UCSC 2017](www.hackucsc.com).
 
