@@ -14,11 +14,17 @@ Julia Philipp		|
 
 ## Special Thanks To
 
-Eric Fultz, for consulting and giving helpful advice at 3:30 a.m.
+Eric Fultz, for advising on project scope.
+Jeffrey Rennie, for advising on implementation.
+Emmanuel Leroy, for advising on machine learning, API usage.
 
 ## Usage
 
 Here is where usage instructions for the app go.
+
+## Discussion
+
+Methods, Statistics, Possible Future Implementations, Challenges, 
 
 ## Support
 
