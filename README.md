@@ -14,11 +14,16 @@ Julia Philipp		|
 
 ## Special Thanks To
 
-Eric Fultz, for consulting and giving helpful advice at 3:30 a.m.
+Eric Fultz, for giving helpful advice regarding project scope.
+Jeffrey Rennie, for giving helpful advice regarding implementation.
 
 ## Usage
 
 Here is where usage instructions for the app go.
+
+## Discussion
+
+Methods, Statistics, Possible Future Implementations, Challenges, 
 
 ## Support
 
