@@ -8,6 +8,7 @@ talking points
 	- using geotag data from users
 	- using YOLO: Real-time object detection -> installing webcam using machine learning to detect cars on 2D still images
 		or 2D videos (http://pjreddie.com/darknet/yolo/)
+	- https://cloud.google.com/vision/
 		
 
 
