@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         gg3.refresh(getRandomInt(0, 1300));
       }
     });
-    $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
+    $( "#amount" ).val( Times[getRandomInt(0,21)]);
   } );
 
 Times = ['07:00 AM','07:30 AM','08:00 AM','08:30 AM','09:00 AM',
@@ -89,4 +89,7 @@ var myChart = new Chart(ctx, {
         gg3.refresh(getRandomInt(0, 1300));
         return false;
     });
+    gg1.refresh(getRandomInt(0,300));
+    gg2.refresh(getRandomInt(0, 250))
+    gg3.refresh(getRandomInt(0, 1300));
 });
