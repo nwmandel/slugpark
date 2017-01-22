@@ -46,8 +46,8 @@
 		<td bgcolor="#aaa" width="20%">
 		<b>West Remote</b>
 			<div class="container">
-			    <div id="gg1" class="gauge" data-value="1200" data-min="0" data-max="1000000" data-gaugeWidthScale="0.6"></div>
-			    <input type="button" id="gg1_refresh" class="btn" value="Random Refresh" />
+			    <div id="gg1" class="gauge" data-value="1200" data-min="0" data-max="300" data-gaugeWidthScale="0.6"></div>
+			    <input type="button" id="gg1_refresh" class="btn" value="Reload Lot" />
 			  </div>
 
 			  <script>
@@ -59,7 +59,7 @@
 			      });
 
 			      document.getElementById('gg1_refresh').addEventListener('click', function() {
-			        gg1.refresh(getRandomInt(0, 1000000));
+			        gg1.refresh(getRandomInt(0, 300));
 			        return false;
 			      });
 			    });
@@ -69,8 +69,8 @@
 		<td bgcolor="#C0C0C0" width="60%">
 		<b>North Remote</b>
 			<div class="container">
-			    <div id="gg2" class="gauge" data-value="1200" data-min="0" data-max="1000000" data-gaugeWidthScale="0.6"></div>
-			    <input type="button" id="gg2_refresh" class="btn" value="Random Refresh" />
+			    <div id="gg2" class="gauge" data-value="1200" data-min="0" data-max="250" data-gaugeWidthScale="0.6"></div>
+			    <input type="button" id="gg2_refresh" class="btn" value="Reload Lot" />
 			  </div>
 
 			  <script>
@@ -82,7 +82,7 @@
 			      });
 
 			      document.getElementById('gg2_refresh').addEventListener('click', function() {
-			        gg2.refresh(getRandomInt(0, 1000000));
+			        gg2.refresh(getRandomInt(0, 250));
 			        return false;
 			      });
 			    });
@@ -91,8 +91,8 @@
 		<td bgcolor="#aaa" width="20%">
 		<b>East Remote</b>
 			<div class="container">
-			    <div id="gg3" class="gauge" data-value="1200" data-min="0" data-max="1000000" data-gaugeWidthScale="0.6"></div>
-			    <input type="button" id="gg3_refresh" class="btn" value="Random Refresh" />
+			    <div id="gg3" class="gauge" data-value="1200" data-min="0" data-max="1300" data-gaugeWidthScale="0.6"></div>
+			    <input type="button" id="gg3_refresh" class="btn" value="Reload Lot" />
 			  </div>
 			  <script>
 			    document.addEventListener("DOMContentLoaded", function(event) {
@@ -103,7 +103,7 @@
 			      });
 
 			      document.getElementById('gg3_refresh').addEventListener('click', function() {
-			        gg3.refresh(getRandomInt(0, 1000000));
+			        gg3.refresh(getRandomInt(0, 1300));
 			        return false;
 			      });
 			    });
