@@ -1,116 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>HTML Layouts using DIV, SPAN</title>
-<script src="scripts/raphael-2.1.4.min.js"></script>
-<script src="scripts/justgage.js"></script>
-<script>
-  var g = new JustGage({
-    id: "gauge",
-    value: 67,
-    min: 0,
-    max: 100,
-    title: "Visitors"
-  });
-</script>
+	<meta charset="utf-8" />
+	<title>SlugPark - created at Hack UCSC 2017</title>
+	<script src="scripts/raphael-2.1.4.min.js"></script>
+	<script src="scripts/justgage.js"></script>
+	<script src="scripts/slugpark.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+			crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+			crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
-  <meta charset="utf-8"/>
-  <title>html5 data-attribute setup</title>
-  <meta name="viewport" content="width=device-width">
-
-  <style>
-    .container {
-      width: 320px;
-      margin: 30px auto 0 auto;
-      text-align: center;
-    }
-
-    .gauge {
-      width: 320px;
-      height: 320px;
-    }
-
-    .btn {
-      margin: 30px 5px 0 2px;
-      padding: 15px 20px;
-    }
-  </style>
 
 <body>
-<div style="width:100%">
-  <div style="background-color:#00ffff; width:100%">
-      <h1>SlugPark</h1>
-  </div>
-<table width="100%" boarder="1">
-	<tr valign="top">
-		<td bgcolor="#aaa" width="20%">
-		<b>West Remote</b>
-			<div class="container">
-			    <div id="gg1" class="gauge" data-value="300" data-min="0" data-max="300" data-gaugeWidthScale="0.6"></div>
-			    <input type="button" id="gg1_refresh" class="btn" value="Reload Lot" />
-			  </div>
-
-			  <script>
-			    document.addEventListener("DOMContentLoaded", function(event) {
-			      var gg1 = new JustGage({
-			        id: "gg1",
-			        formatNumber: true,
-			        counter: true
-			      });
-
-			      document.getElementById('gg1_refresh').addEventListener('click', function() {
-			        gg1.refresh(getRandomInt(0, 300));
-			        return false;
-			      });
-			    });
-			  </script>
-		<div id="gauge" class="200x160px"></div>
-		</td>
-		<td bgcolor="#C0C0C0" width="60%">
-		<b>North Remote</b>
-			<div class="container">
-			    <div id="gg2" class="gauge" data-value="250" data-min="0" data-max="250" data-gaugeWidthScale="0.6"></div>
-			    <input type="button" id="gg2_refresh" class="btn" value="Reload Lot" />
-			  </div>
-
-			  <script>
-			    document.addEventListener("DOMContentLoaded", function(event) {
-			      var gg2 = new JustGage({
-			        id: "gg2",
-			        formatNumber: true,
-			        counter: true
-			      });
-
-			      document.getElementById('gg2_refresh').addEventListener('click', function() {
-			        gg2.refresh(getRandomInt(0, 250));
-			        return false;
-			      });
-			    });
-			  </script>
-		</td>
-		<td bgcolor="#aaa" width="20%">
-		<b>East Remote</b>
-			<div class="container">
-			    <div id="gg3" class="gauge" data-value="1300" data-min="0" data-max="1300" data-gaugeWidthScale="0.6"></div>
-			    <input type="button" id="gg3_refresh" class="btn" value="Reload Lot" />
-			  </div>
-			  <script>
-			    document.addEventListener("DOMContentLoaded", function(event) {
-			      var gg3 = new JustGage({
-			        id: "gg3",
-			        formatNumber: true,
-			        counter: true
-			      });
-
-			      document.getElementById('gg3_refresh').addEventListener('click', function() {
-			        gg3.refresh(getRandomInt(0, 1300));
-			        return false;
-			      });
-			    });
-			  </script>
-		</td>
-	</tr>
-</table>
+	<div class="container-fluid">
+		<div class="row" id = "headermenu">
+			<h1>SlugPark</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div>
+				<b>West Remote</b>
+					<div id="gg1" class="gauge" data-value="300" data-min="0" data-max="300" data-gaugeWidthScale="0.6"></div>
+					<input type="button" id="gg1_refresh" class="btn" value="Reload Lot" />
+				</div>
+			</div>
+			<div id="northremote" class="col-sm-4">
+				<div>
+				<b>North Remote</b>
+					<div id="gg2" class="gauge" data-value="250" data-min="0" data-max="250" data-gaugeWidthScale="0.6"></div>
+					<input type="button" id="gg2_refresh" class="btn" value="Reload Lot" />
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div>
+				<b>East Remote</b>
+					<div id="gg3" class="gauge" data-value="1300" data-min="0" data-max="1300" data-gaugeWidthScale="0.6"></div>
+					<input type="button" id="gg3_refresh" class="btn" value="Reload Lot" />
+				</div>
+			</div>
+		</div>
 </body>
+
 </html>
+
 <head>

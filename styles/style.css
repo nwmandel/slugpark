@@ -1,0 +1,30 @@
+    h1 {
+      color: #F1B521;
+      font-size: 2.2em;
+    }
+
+    #headermenu {
+      background-color: #00458c;
+      padding: 0.2em;
+    }
+
+    .row > div > div {
+        margin: 0.2em;
+        padding: 0.3em;
+        background-color: #FFEFC9;
+        border: 1px solid black;
+        border-radius: 1em;
+        text-align: center;
+    }
+
+    svg {
+        display:block;
+        margin: auto;
+    }
+
+    body {
+        font-family: "Garamond", "Baskerville", "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+        font-size: 2em;
+        background-color: #FFF7E2;
+    }
+    
