@@ -1,0 +1,7 @@
+"max_capacity"	"current_car_count"
+"East remote1"	30	15
+"East remote2"	30	19
+"West remote1"	50	17
+"West remote2"	50	23
+"North remote1"	40	2
+"North remote2"	40	25
