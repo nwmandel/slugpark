@@ -9,39 +9,43 @@
 	<script src="scripts/slugpark.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 			crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-			crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+				crossorigin="anonymous"></script>
+			<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
 <body>
-	<div class="container-fluid">
-		<div class="row" id = "headermenu">
+	<div class="container-fluid wrapper">
+		<div class="row" id="headermenu">
 			<h1>SlugPark</h1>
 		</div>
 		<div class="row">
 			<div class="col-sm-4">
 				<div>
-				<b>West Remote</b>
+					<b>West Remote</b>
 					<div id="gg1" class="gauge" data-value="300" data-min="0" data-max="300" data-gaugeWidthScale="0.6"></div>
 					<input type="button" id="gg1_refresh" class="btn" value="Reload Lot" />
 				</div>
 			</div>
 			<div id="northremote" class="col-sm-4">
 				<div>
-				<b>North Remote</b>
+					<b>North Remote</b>
 					<div id="gg2" class="gauge" data-value="250" data-min="0" data-max="250" data-gaugeWidthScale="0.6"></div>
 					<input type="button" id="gg2_refresh" class="btn" value="Reload Lot" />
 				</div>
 			</div>
 			<div class="col-sm-4">
 				<div>
-				<b>East Remote</b>
+					<b>East Remote</b>
 					<div id="gg3" class="gauge" data-value="1300" data-min="0" data-max="1300" data-gaugeWidthScale="0.6"></div>
 					<input type="button" id="gg3_refresh" class="btn" value="Reload Lot" />
 				</div>
 			</div>
 		</div>
+		<div id="footer" class="row">
+			<div><a href="https://github.com/nwmandel/slugpark">Made by #team for Hack UCSC 2017</a></div>
+		</div>
+	</div>
 </body>
 
 </html>
