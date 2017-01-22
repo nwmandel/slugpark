@@ -111,8 +111,6 @@ def sorted_time():
 			if m.search(line):
 				time_ = re.search(time,line).group(0)	#every time class for monday
 				monday[line] = time_
-				od = collections.OrderedDict(sorted(monday.items()))
-				print(od)
 			elif tu.search(line):
 				time_ = re.search(time,line).group(0)	#every time class for tuesday
 				tuesday[line] = time_			
