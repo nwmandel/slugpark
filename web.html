@@ -2,7 +2,40 @@
 <html>
 <head>
 <title>HTML Layouts using DIV, SPAN</title>
+<script src="/scripts/raphael-2.1.4.min.js"></script>
+<script src="/scripts/justgage.js"></script>
+<script>
+  var g = new JustGage({
+    id: "gauge",
+    value: 67,
+    min: 0,
+    max: 100,
+    title: "Visitors"
+  });
+</script>
 </head>
+  <meta charset="utf-8"/>
+  <title>html5 data-attribute setup</title>
+  <meta name="viewport" content="width=device-width">
+
+  <style>
+    .container {
+      width: 320px;
+      margin: 30px auto 0 auto;
+      text-align: center;
+    }
+
+    .gauge {
+      width: 320px;
+      height: 320px;
+    }
+
+    .btn {
+      margin: 30px 5px 0 2px;
+      padding: 15px 20px;
+    }
+  </style>
+
 <body>
 <div style="width:100%">
   <div style="background-color:#00ffff; width:100%">
@@ -12,14 +45,79 @@
 	<tr valign="top">
 		<td bgcolor="#aaa" width="20%">
 		<b>West Remote</b>
+			<div class="container">
+			    <div id="gg1" class="gauge" data-value="1200" data-min="0" data-max="1000000" data-gaugeWidthScale="0.6"></div>
+			    <input type="button" id="gg1_refresh" class="btn" value="Random Refresh" />
+			  </div>
+
+			  <script src="../raphael-2.1.4.min.js"></script>
+			  <script src="../justgage.js"></script>
+			  <script>
+			    document.addEventListener("DOMContentLoaded", function(event) {
+			      var gg1 = new JustGage({
+			        id: "gg1",
+			        formatNumber: true,
+			        counter: true
+			      });
+
+			      document.getElementById('gg1_refresh').addEventListener('click', function() {
+			        gg1.refresh(getRandomInt(0, 1000000));
+			        return false;
+			      });
+			    });
+			  </script>
+		<div id="gauge" class="200x160px"></div>
 		</td>
 		<td bgcolor="#C0C0C0" width="60%">
 		<b>North Remote</b>
+			<div class="container">
+			    <div id="gg1" class="gauge" data-value="1200" data-min="0" data-max="1000000" data-gaugeWidthScale="0.6"></div>
+			    <input type="button" id="gg1_refresh" class="btn" value="Random Refresh" />
+			  </div>
+
+			  <script src="../raphael-2.1.4.min.js"></script>
+			  <script src="../justgage.js"></script>
+			  <script>
+			    document.addEventListener("DOMContentLoaded", function(event) {
+			      var gg1 = new JustGage({
+			        id: "gg1",
+			        formatNumber: true,
+			        counter: true
+			      });
+
+			      document.getElementById('gg1_refresh').addEventListener('click', function() {
+			        gg1.refresh(getRandomInt(0, 1000000));
+			        return false;
+			      });
+			    });
+			  </script>
 		</td>
 		<td bgcolor="#aaa" width="20%">
 		<b>East Remote</b>
+			<div class="container">
+			    <div id="gg1" class="gauge" data-value="1200" data-min="0" data-max="1000000" data-gaugeWidthScale="0.6"></div>
+			    <input type="button" id="gg1_refresh" class="btn" value="Random Refresh" />
+			  </div>
+
+			  <script src="../raphael-2.1.4.min.js"></script>
+			  <script src="../justgage.js"></script>
+			  <script>
+			    document.addEventListener("DOMContentLoaded", function(event) {
+			      var gg1 = new JustGage({
+			        id: "gg1",
+			        formatNumber: true,
+			        counter: true
+			      });
+
+			      document.getElementById('gg1_refresh').addEventListener('click', function() {
+			        gg1.refresh(getRandomInt(0, 1000000));
+			        return false;
+			      });
+			    });
+			  </script>
 		</td>
 	</tr>
 </table>
 </body>
 </html>
+<head>
