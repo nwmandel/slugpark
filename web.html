@@ -14,13 +14,26 @@
 				crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </head>
 
 <body>
 	<div class="container-fluid">
 		<div class="row" id="headermenu">
-			<h1>SlugPark</h1>
+			<img src="slugpark_logo.png" height=48 width=48 style="display:inline; margin-bottom: 8px;"><h1 style="display:inline">SlugPark</h1>
 		</div>
+
+		<div class="row" id="slider">
+			<p>
+  <label for="amount">Time of Day:</label>
+  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;"></input>
+</p>
+ 
+<div id="slider-range-min"></div>
+			</div>
+
+
 		<div class="row">
 			<div class="col-sm-4">
 				<div>
