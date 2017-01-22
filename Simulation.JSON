@@ -16,25 +16,25 @@
 		"North": 90,
 		"East": 150
 	}, "5": {
-		"West": 10,
-		"North": 10,
-		"East": 10
+		"West": 65,
+		"North": 100,
+		"East": 200
 	}, "6": {
-		"West": 10,
-		"North": 10,
-		"East": 10
+		"West": 69,
+		"North": 99,
+		"East": 250
 	}, "7": {
-		"West": 10,
-		"North": 10,
-		"East": 10
+		"West": 60,
+		"North": 120,
+		"East": 300
 	}, "8": {
-		"West": 10,
-		"North": 10,
-		"East": 10
+		"West": 100,
+		"North": 100,
+		"East": 400
 	}, "9": {
-		"West": 10,
-		"North": 10,
-		"East": 10
+		"West": 100,
+		"North": 130,
+		"East": 350
 	}, "10": {
 		"West": 10,
 		"North": 10,
