@@ -1,6 +1,6 @@
 # SlugPark Parking Tracker 
 
-This is an app used to track parking spots at UCSC using class enrollment data, statistical inference, and user location data. Made at [Hack UCSC 2017](www.hackucsc.com).
+This is an app used to track parking spots at UCSC using class enrollment data, statistical inference, and user location data. Made at [Hack UCSC 2017](www.hackucsc.com). For more information see our corresponding [devpost submission](https://devpost.com/software/slugpark) 
 
 ## Team
 
@@ -21,7 +21,7 @@ Kevin Cameron, for advising on databases and web development.
 
 ## Usage
 
-Here is where usage instructions for the app go.
+Visit slugpark.com to see the current occupation of the East remote, West remote, and North remote parking lots on the UCSC campus. Click the refresh button under each of the parking lots to receive updated information.
 
 ## Discussion
 
