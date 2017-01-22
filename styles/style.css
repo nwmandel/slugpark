@@ -18,7 +18,7 @@
     
     #headermenu {
         background-color: #00458c;
-        padding: 0.2em 1em 1em;
+        padding: 0.1em 1em 0.2em;
     }
     
     .row>div>div {
@@ -38,4 +38,5 @@
     body {
         font-size: 2em;
         background-color: #FFF7E2;
+        margin-bottom: 5em;
     }
