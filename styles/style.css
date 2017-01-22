@@ -40,3 +40,12 @@
         background-color: #FFF7E2;
         margin-bottom: 5em;
     }
+
+    #slider {
+        text-align:center;
+    }
+
+    #slider-range-min {
+        width: 80%;
+        margin: 0 auto 0.2em;
+    }
