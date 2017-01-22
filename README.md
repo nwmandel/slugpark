@@ -12,6 +12,8 @@ Lucas Tay			| ltay
 Neda Ronaghi		| nedaronaghi
 Julia Philipp		| nattifftoffe
 
+![team](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/464/765/datas/gallery.jpg)
+
 ## Special Thanks To
 
 Eric Fultz, for advising on project scope.
