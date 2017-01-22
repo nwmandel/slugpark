@@ -2,6 +2,17 @@
 <html>
 <head>
 <title>HTML Layouts using DIV, SPAN</title>
+<script src="/scripts/raphael-2.1.4.min.js"></script>
+<script src="/scripts/justgage.js"></script>
+<script>
+  var g = new JustGage({
+    id: "gauge",
+    value: 67,
+    min: 0,
+    max: 100,
+    title: "Visitors"
+  });
+</script>
 </head>
   <meta charset="utf-8"/>
   <title>html5 data-attribute setup</title>
@@ -55,6 +66,7 @@
 			      });
 			    });
 			  </script>
+		<div id="gauge" class="200x160px"></div>
 		</td>
 		<td bgcolor="#C0C0C0" width="60%">
 		<b>North Remote</b>
