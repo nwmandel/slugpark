@@ -21,7 +21,7 @@ Kevin Cameron, for advising on databases and web development.
 
 ## Usage
 
-Here is where usage instructions for the app go.
+Visit slugpark.com to see the current occupation of the East remote, West remote, and North remote parking lots on the UCSC campus. Click the refresh button under each of the parking lots to receive updated information.
 
 ## Discussion
 
