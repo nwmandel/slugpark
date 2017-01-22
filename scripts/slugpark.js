@@ -1,34 +1,18 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-
   $( function() {
-    var d = new Date();
-    var h = ('0' + d.getHours()).slice(-2);
-    var m = d.getMinutes();
-    function formatAMPM(date) {
-  var hours = ('0' + d.getHours()).slice(-2);
-  var minutes = date.getMinutes();
-  var ampm = hours >= 12 ? 'PM' : 'AM';
-  hours = hours % 12;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
-  minutes = minutes < 10 ? '0'+minutes : minutes;
-  var strTime = hours + ':' + minutes + ' ' + ampm;
-  return strTime;
-}
     $( "#slider-range-min" ).slider({
       range: "min",
-      value: 7,
+      value: 8,
       min: 1,
       max: 22,
-      step: 1,
       slide: function( event, ui ) {
         $( "#amount" ).val( Times[ui.value] );
         gg1.refresh(getRandomInt(0, 300));
         gg2.refresh(getRandomInt(0, 250));
         gg3.refresh(getRandomInt(0, 1300));
       }
-      
     });
-    $( "#amount" ).val( formatAMPM(d) );
+    $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
   } );
 
 Times = ['07:00 AM','07:30 AM','08:00 AM','08:30 AM','09:00 AM',
